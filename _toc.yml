@@ -1,18 +1,23 @@
 format: jb-book
 root: index.md
 parts:
-  - caption: 示例部分
+  - caption: 命名
     chapters:
-      - file: 1_example_chapter/README.md
+      - file: naming/tutorials.md
+      - file: naming/handbooks.md
+      - file: naming/standards.md
+      - file: naming/tools/README.md
         sections:
-          - file: 1_example_chapter/1_example_section/README.md
-            sections:
-              - file: 1_example_chapter/1_example_section/1_example_article.md
-              - file: 1_example_chapter/1_example_section/1_example_article2.md
-          - file: 1_example_chapter/2_example_article3.md
-  - caption: 示例部分2
+          - file: naming/tools/domains.md
+          - file: naming/tools/applications.md
+      - file: naming/platforms/README.md
+        sections:
+          - file: naming/platforms/codes.md
+          - file: naming/platforms/docs.md
+  - caption: 团队协作
     chapters:
-      - file: 2_example_chapter2/README.md
-        sections:
-          - file: 2_example_chapter2/1_example_section2/README.md
-      - file: 3_example_chapter3/README.md
+      - file: cooporation/plans.md
+      - file: cooporation/issues.md
+  - caption: 文档工程
+    chapters:
+      - file: docs/README.md
