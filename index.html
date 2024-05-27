@@ -320,7 +320,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -336,6 +338,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">基本规范</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -349,6 +359,13 @@ document.write(`
 <h1>简介<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <p>之所以要定义不同类型的数字资产，是要分别维护不同类型的信息，方便在组织内外部流转。</p>
 <p>把需要标准化和数字资产化的资源集中到微盘的一个空间集中管控。使用我们已经制定的各种标准来制定各种资源管理的最佳实践，并记录到手册里。利用这个方法，可以不断检验标准、积累手册，为研发云平台积累经验，减少未来迁移资源的成本。</p>
+<section id="id2">
+<h2>基本规范<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>资源按照分类分配给各个部门、委员会、项目组维护，如本手册归”总裁办公室”维护。</p></li>
+<li><p>文件夹命名：”&lt;领域&gt;-&lt;子领域&gt;-&lt;领域模型&gt;”，如“团队协作-议事管理-议题”。</p></li>
+</ol>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -403,7 +420,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">基本规范</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
