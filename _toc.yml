@@ -5,7 +5,7 @@ parts:
     chapters:
       - file: naming/tutorials.md
       - file: naming/handbooks.md
-      - file: naming/standards.md
+      - file: naming/specifications.md
       - file: naming/tools/README.md
         sections:
           - file: naming/tools/domains.md
