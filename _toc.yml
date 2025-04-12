@@ -1,8 +1,16 @@
 format: jb-book
 root: index.md
 parts:
-- caption: 领域资产
+- caption: 类型
+  chapters: 
+  - file: types/git_repositories/README.md
+    sections:
+    - file: types/git_repositories/python_repositories.md
+- caption: 领域
   chapters:
   - file: domains/collaboration/README.md
     sections:
     - file: domains/collaboration/meeting.md
+  - file: domains/data_engineering/README.md
+    sections:
+    - file: domains/data_engineering/data_processors.md
