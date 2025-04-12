@@ -1,23 +1,8 @@
 format: jb-book
 root: index.md
 parts:
-  - caption: 命名
-    chapters:
-      - file: naming/tutorials.md
-      - file: naming/handbooks.md
-      - file: naming/specifications.md
-      - file: naming/tools/README.md
-        sections:
-          - file: naming/tools/domains.md
-          - file: naming/tools/applications.md
-      - file: naming/platforms/README.md
-        sections:
-          - file: naming/platforms/codes.md
-          - file: naming/platforms/docs.md
-  - caption: 团队协作
-    chapters:
-      - file: cooporation/plans.md
-      - file: cooporation/issues.md
-  - caption: 文档工程
-    chapters:
-      - file: docs/README.md
+- caption: 领域资产
+  chapters:
+  - file: domains/collaboration/README.md
+    sections:
+    - file: domains/collaboration/meeting.md
