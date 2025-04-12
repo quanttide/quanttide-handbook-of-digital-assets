@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>团队协作 &#8212; 量潮数字资产手册</title>
+    <title>数据处理器 &#8212; 量潮数字资产手册</title>
   
   
   
@@ -57,11 +57,10 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'domains/collaboration/README';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'domains/data_engineering/data_processors';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="会议" href="meeting.html" />
-    <link rel="prev" title="Python仓库" href="../../types/git_repositories/python_repositories.html" />
+    <link rel="prev" title="数据工程" href="README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,12 +181,12 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">领域</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">团队协作</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="meeting.html">会议</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../collaboration/README.html">团队协作</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../collaboration/meeting.html">会议</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../data_engineering/README.html">数据工程</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../data_engineering/data_processors.html">数据处理器</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">数据工程</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">数据处理器</a></li>
 </ul>
 </details></li>
 </ul>
@@ -244,7 +243,7 @@
       
       
       
-      <li><a href="../../_sources/domains/collaboration/README.md" target="_blank"
+      <li><a href="../../_sources/domains/data_engineering/data_processors.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -315,7 +314,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -326,11 +327,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>团队协作</h1>
+    <h1>数据处理器</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">概述</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">模块划分</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -341,9 +351,48 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>团队协作<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+<h1>数据处理器<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>概述<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>文档、测试、代码模块一一对应。</p>
+<p>组成：</p>
+<ul class="simple">
+<li><p>文档：说明模块功能和设计思路，并明确验收标准和对应的测试设计思路。</p></li>
+<li><p>测试：列举所有的测试可能，并使用单元测试实现。</p></li>
+</ul>
+<p>流程：</p>
+<ol class="arabic simple">
+<li><p>文档驱动开发：先写文档、再写测试和代码。文档要结合需求和开发思路，确保开发的技术和验收结果的非技术都可以理解。</p></li>
+<li><p>测试驱动开发：遵循红-绿-重构的流程，先根据规范的测试管理方式列举各种可能性，然后实现和重构。</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>模块划分<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>代码文件夹：</p>
+<ul class="simple">
+<li><p>src/__main__模块</p></li>
+<li><p>src/processors模块</p></li>
+<li><p>src/repositories模块</p></li>
+<li><p>src/models模块</p></li>
+</ul>
+<p>文档文件夹：</p>
+<ul class="simple">
+<li><p>docs/README模块，对应mian模块</p></li>
+<li><p>docs/processors模块</p></li>
+<li><p>etc</p></li>
+</ul>
+<p>单元测试文件夹：</p>
+<ul class="simple">
+<li><p>tests/test_main模块。</p></li>
+<li><p>test/test_processsors模块。</p></li>
+<li><p>etc</p></li>
+</ul>
+<p>集成测试模块为：</p>
+<ul class="simple">
+<li><p>integrated_tests/test_main模块</p></li>
+<li><p>etc</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -359,7 +408,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./domains/collaboration"
+            path: "./domains/data_engineering"
         },
         predefinedOutput: true
     }
@@ -377,22 +426,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../types/git_repositories/python_repositories.html"
+       href="README.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Python仓库</p>
+        <p class="prev-next-title">数据工程</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="meeting.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">会议</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -400,6 +440,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">概述</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">模块划分</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
